@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JeielTI - Suporte Técnico Especializado</title>
+    <link rel="icon" href="https://th.bing.com/th/id/R.bc98c9dcc76893a46fc71f3920846a05?rik=%2fVqopoT9oJbeiA&pid=ImgRaw&r=0" type="image/gif">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .transition-all { transition: all 0.3s ease; }
+        .slide-up { opacity: 0; transform: translateY(20px); transition: all 0.5s ease-in-out; }
+        .slide-up.visible { opacity: 1; transform: translateY(0); }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <nav class="fixed w-full bg-white shadow-lg z-50">
+        <div class="container mx-auto px-6 py-3 flex justify-between items-center">
+            <div class="flex items-center space-x-4">
+                <div class="font-bold text-2xl text-blue-600">JeielTI</div>
+                <img src="https://th.bing.com/th/id/R.bc98c9dcc76893a46fc71f3920846a05?rik=%2fVqopoT9oJbeiA&pid=ImgRaw&r=0" alt="Logo" class="w-8 h-8 border border-gray-300 rounded">
+            </div>
+            <div class="hidden md:flex space-x-8">
+                <a href="#servicos" class="hover:text-blue-600 transition-all">Serviços</a>
+                <a href="#sobre" class="hover:text-blue-600 transition-all">Sobre</a>
+                <a href="#contato" class="hover:text-blue-600 transition-all scroll-smooth">Contato</a>
+            <style>
+                html {
+                    scroll-behavior: smooth;
+                }
+            </style>
+            </div>
+        </div>
+    </nav>
+
+    <div class="pt-16 bg-gradient-to-r from-blue-600 to-blue-800 text-white">
+        <div class="container mx-auto px-6 py-24 text-center">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6">Suporte Técnico Profissional</h1>
+            <p class="text-xl mb-10 text-blue-100">Soluções em TI para impulsionar seu negócio</p>
+            <a href="#contato" class="bg-white text-blue-600 px-10 py-4 rounded-full font-bold hover:bg-blue-50 transition-all transform hover:scale-105">
+                Solicitar Suporte
+            </a>
+        </div>
+    </div>
+
+    <section id="servicos" class="py-20">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-16">Serviços</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-all transform hover:-translate-y-2 slide-up">
+                    <div class="text-blue-600 text-5xl mb-6"><i class="fas fa-laptop-code"></i></div>
+                    <h3 class="text-2xl font-bold mb-4">Suporte Remoto 24/7</h3>
+                    <p class="text-gray-600">Atendimento remoto imediato para resolução rápida de problemas.</p>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-all transform hover:-translate-y-2 slide-up">
+                    <div class="text-blue-600 text-5xl mb-6"><i class="fas fa-network-wired"></i></div>
+                    <h3 class="text-2xl font-bold mb-4">Configuração de Redes</h3>
+                    <p class="text-gray-600">Manutenção de redes para residências, como otimização de redes Wi-fi e configuração de Firewall.</p>
+                    
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-all transform hover:-translate-y-2 slide-up">
+                    <div class="text-blue-600 text-5xl mb-6"><i class="fas fa-shield-alt"></i></div>
+                    <h3 class="text-2xl font-bold mb-4">Segurança da Informação</h3>
+                    <p class="text-gray-600">Proteção de dados e prevenção contra ameaças cibernéticas, como verificação de dados vazados, mais ativação avançada contra tentativa de acesso não autorizado dados.</p>
+                   
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-all transform hover:-translate-y-2 slide-up">
+                    <div class="text-blue-600 text-5xl mb-6"><i class="fas fa-virus"></i></div>
+                    <h3 class="text-2xl font-bold mb-4">Remoção de Malwares</h3>
+                    <p class="text-gray-600">Combate tipos de malwares populares, como vírus, trojans, spyware e ransoware.</p>
+                    
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-all transform hover:-translate-y-2 slide-up">
+                    <div class="text-blue-600 text-5xl mb-6"><i class="fas fa-sitemap"></i></div>
+                    <h3 class="text-2xl font-bold mb-4">Configuração de Backup</h3>
+                    <p class="text-gray-600">Previne perda de dados ou solução contra Ransoware. Configuração de backup feito através de software.</p>
+                    
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-all transform hover:-translate-y-2 slide-up">
+                    <div class="text-blue-600 text-5xl mb-6"><i class="fas fa-desktop"></i></div>
+                    <h3 class="text-2xl font-bold mb-4">Instalação de sistemas operacionais</h3>
+                    <p class="text-gray-600">Sistemas operacionais Windows 10 ou 11. Linux, geralmente a base de Ubuntu ou Debian, como Zorin.</p>
+                    <video src="https://assets.zorincdn.com/zorin.com/videos/17/pro.webm" controls autoplay loop></video>
+                </div>    
+            </div>
+        </div>
+    </section>
+
+    <section id="contato" class="bg-gray-100 py-20 slide-up">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-16">Entre em Contato</h2>
+            <div class="max-w-lg mx-auto bg-white rounded-xl shadow-xl p-8">
+                <form class="space-y-6">
+                    <input type="text" placeholder="Nome" class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600">
+                    <input type="email" placeholder="Email" class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600">
+                    <textarea placeholder="Oi, meu computador está com problema de software. Ele está travando ao abrir programas e exibindo mensagens de erro. Você pode me ajudar?" class="w-full p-3 border rounded-lg h-32 focus:outline-none focus:ring-2 focus:ring-blue-600"></textarea>
+                    <button class="w-full bg-blue-600 text-white py-3 rounded-lg font-bold hover:bg-blue-700 transition-all transform hover:scale-105">
+                        Enviar Mensagem
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-8 md:mb-0">
+                    <h3 class="font-bold text-2xl mb-2">JeielTI</h3>
+                    <p class="text-gray-400 text-justify">Formado em Segurança digital, pós-graduado em Tecnologia da Informação e Comunicação (TIC). Possui conhecimento de software, privacidade online, hardware, lógica de programação e redes.</p>
+                </div>
+
+                <div class="flex space-x-4 mb-auto">
+                    <a href="https://www.linkedin.com/in/jeiel-lima-miranda/" class="text-2xl hover:text-blue-400 transition-all"><i class="fab fa-linkedin"></i></a>
+                    <a href="mailto:jeiel@duck.com" class="text-2xl hover:text-blue-400 transition-all"><i class="far fa-envelope"></i></a>
+                    <a href="https://t.me/ZorinTrix" class="text-2xl hover:text-blue-400 transition-all"><i class="fab fa-telegram"></i></a>
+                    <a href="https://jeiel.pages.dev/" class="text-2xl hover:text-blue-400 transition-all"><i class="fas fa-globe"></i></a>
+                    <a href="https://jeiel-lima-miranda.vercel.app/" class="text-2xl hover:text-blue-400 transition-all"><i class="fas fa-id-card"></i></a>
+                    <a href="https://jeiel-blog.vercel.app/" class="text-2xl hover:text-blue-400 transition-all"><i class="fas fa-blog"></i></a>
+                </div>
+            </div>
+            <div class="mt-12 text-center text-gray-400">
+                <p>&copy; 2024 JeielTI. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('scroll', function() {
+            const elements = document.querySelectorAll('.slide-up');
+            elements.forEach(element => {
+                const rect = element.getBoundingClientRect();
+                if (rect.top < window.innerHeight) {
+                    element.classList.add('visible');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
