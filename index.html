@@ -104,6 +104,30 @@
         </div>
     </section>
 
+<!-- Modal --> 
+<div id="modal" class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 hidden">
+    <div class="bg-white p-6 rounded-lg shadow-lg max-w-md w-full m-4">
+        <h2 class="text-2xl font-bold mb-4">Sobre</h2> 
+        <p class="text-gray-600 mb-4">Jeiel Miranda é um jovem de 21 anos, especializado em soluções de TI para residências, oferecendo atendimento presencial em Ananindeua-PA e suporte remoto para todo o Brasil. Com expertise em segurança digital, redes e sistemas, fornecemos soluções integradas e personalizadas para todas as suas necessidades tecnológicas.</p>
+        <button class="mt-4 px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition-all" onclick="closeModal()">Fechar</button>
+    </div>
+</div> 
+
+<script> 
+    document.querySelector('a[href="#sobre"]').addEventListener('click', function(e) {
+        e.preventDefault();
+        openModal();
+    });
+
+    function openModal() {
+        document.getElementById('modal').classList.remove('hidden');
+    }
+    
+    function closeModal() {
+        document.getElementById('modal').classList.add('hidden');
+    }
+</script>
+    
     <!-- Contato -->
     <section id="contato" class="bg-gray-100 py-20 slide-up">
         <div class="container mx-auto px-6">
@@ -114,7 +138,7 @@
                     <input type="email" placeholder="Email" class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600">
                     <textarea placeholder="Oi, meu computador está com problema de software. Ele está travando ao abrir programas e exibindo mensagens de erro. Você pode me ajudar?" class="w-full p-3 border rounded-lg h-32 focus:outline-none focus:ring-2 focus:ring-blue-600"></textarea>
                     <button class="w-full bg-blue-600 text-white py-3 rounded-lg font-bold hover:bg-blue-700 transition-all transform hover:scale-105">
-                        Enviar Mensagem
+                        [Em desenvolvimento]
                     </button>
                 </form>
             </div>
