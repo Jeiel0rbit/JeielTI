@@ -1,46 +1,55 @@
-# JeielTI - Suporte Profissional em TI
+# JeielTI Website
 
-Site profissional de serviços de suporte em TI construído com tecnologias modernas.
+A professional IT support services website built with HTML, TailwindCSS and JavaScript.
 
-## 🚀 Funcionalidades
+## Features
+- Responsive navigation menu
+- Service cards with hover animations
+- Modal popup for "About" section
+- Contact form
+- Smooth scroll behavior
+- Animated elements with slide-up effect
+- Social media links
+- Mobile-friendly design
 
-- Menu responsivo com navegação suave
-- Cards de serviços interativos
-- Modal informativo na seção "Sobre"
-- Formulário de contato integrado
-- Animações slide-up em elementos
-- Design mobile-first
-- Integração com redes sociais
-
-## 💻 Tecnologias
-
+## Technologies
 - HTML5
 - TailwindCSS 2.2.19
 - Font Awesome 6.0.0
-- JavaScript Vanilla
+- Vanilla JavaScript
 
-## 🛠️ Serviços Oferecidos
+## Sections
+### Navigation Bar
+Fixed header with logo and menu links
 
-- **Suporte Remoto 24/7**
-- **Configuração de Redes**
-- **Segurança da Informação**
-- **Remoção de Malware**
-- **Configuração de Backup**
-- **Instalação de Sistemas**
+### Main Banner
+Gradient background with call-to-action
 
-## 🚦 Como Iniciar
+### Services
+Grid layout showcasing IT support offerings:
+- 24/7 Remote Support
+- Network Configuration
+- Information Security
+- Malware Removal
+- Backup Setup
+- Operating System Installation
 
-1. Clone o repositório
-2. Abra `index.html` no navegador
-3. Para desenvolvimento, utilize o CDN TailwindCSS incluído
+### Contact Form
+Section for sending inquiries
 
-## 📱 Contato
+### Footer
+Company information and social media links
 
-- **LinkedIn:** [Jeiel Lima Miranda](https://linkedin.com/in/jeiel-lima-miranda)
-- **Email:** jeiel@duck.com
-- **Telegram:** @ZorinTrix
-- **Portfólio:** [jeiel.pages.dev](https://jeiel.pages.dev)
+## Quick Start
+1. Clone this repository
+2. Open index.html in browser
+3. For development, TailwindCSS CDN is already included
 
-## 📄 Licença
+## Contact
+- LinkedIn: [Jeiel Lima Miranda](https://linkedin.com)
+- Email: jeiel@duck.com
+- Telegram: @ZorinTrix
+- Portfolio: [jeiel.pages.dev](https://jeiel.pages.dev)
 
-© 2024 JeielTI. Todos os direitos reservados.
+## License
+© 2024 JeielTI. All rights reserved.
