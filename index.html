@@ -134,9 +134,9 @@
             <h2 class="text-4xl font-bold text-center mb-16">Entre em Contato</h2>
             <div class="max-w-lg mx-auto bg-white rounded-xl shadow-xl p-8">
                 <form id="contact-form" class="space-y-6">
-                    <input type="text" name="name" placeholder="Nome" class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600">
-                    <input type="email" name="email" placeholder="Email" class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600">
-                    <textarea name="message" placeholder="Oi, meu computador está com problema de software. Ele está travando ao abrir programas e exibindo mensagens de erro. Você pode me ajudar?" class="w-full p-3 border rounded-lg h-32 focus:outline-none focus:ring-2 focus:ring-blue-600"></textarea>
+                    <input type="text" name="name" placeholder="Nome" class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600" required>
+                    <input type="email" name="email" placeholder="Email" class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600" pattern=".+@(gmail|hotmail|outlook|protonmail)\.com" required>
+                    <textarea name="message" placeholder="Oi, meu computador está com problema de software. Ele está travando ao abrir programas e exibindo mensagens de erro. Você pode me ajudar?" class="w-full p-3 border rounded-lg h-32 focus:outline-none focus:ring-2 focus:ring-blue-600" required></textarea>
                     <button type="submit" class="w-full bg-blue-600 text-white py-3 rounded-lg font-bold hover:bg-blue-700 transition-all transform hover:scale-105">
                         Enviar
                     </button>
