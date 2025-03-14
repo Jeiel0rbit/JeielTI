@@ -133,7 +133,7 @@
         <div class="container mx-auto px-6">
             <h2 class="text-4xl font-bold text-center mb-16">Entre em Contato</h2>
             <div class="max-w-lg mx-auto bg-white rounded-xl shadow-xl p-8">
-                <form id="contact-form" class="space-y-6">
+                <form id="contact-form" class="space-y-6" onsubmit="sendEmail(event)">
                     <input type="text" name="name" placeholder="Nome" class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600" required>
                     <input type="email" name="email" placeholder="Email" class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600" pattern=".+@(gmail|hotmail|outlook|protonmail)\.com" required>
                     <textarea name="message" placeholder="Oi, meu computador está com problema de software. Ele está travando ao abrir programas e exibindo mensagens de erro. Você pode me ajudar?" class="w-full p-3 border rounded-lg h-32 focus:outline-none focus:ring-2 focus:ring-blue-600" required></textarea>
@@ -182,20 +182,16 @@
         });
     </script>
     <script>
-        document.getElementById('contact-form').addEventListener('submit', async function(event) {
+        function sendEmail(event) {
             event.preventDefault();
-            const form = event.target;
-            const formData = new FormData(form);
-            const response = await fetch('https://form.jeiel-lima-miranda.workers.dev/', {
-                method: 'POST',
-                body: formData
-            });
-            if (response.ok) {
-                alert('Email enviado com sucesso!');
-            } else {
-                alert('Falha ao enviar email.');
-            }
-        });
+            const form = document.getElementById('contact-form');
+            const name = form.name.value;
+            const email = form.email.value;
+            const message = form.message.value;
+            const recipient = 'nrmdm97aq@mozmail.com';
+            const mailtoLink = `mailto:${recipient}?subject=Contato de ${name}&body=${encodeURIComponent(message)}%0A%0AEmail do remetente: ${email}`;
+            window.location.href = mailtoLink;
+        }
     </script>
 </body>
 </html>
